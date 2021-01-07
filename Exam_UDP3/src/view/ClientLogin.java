@@ -98,11 +98,11 @@ public class ClientLogin extends javax.swing.JFrame {
             ctr.close();
         }
         else{
-            Users u = (Users)o;
+            Users user = (Users)o;
             ctr.close();
             this.setVisible(false);
             ClientEditInfo edit = new ClientEditInfo();
-            edit.loadFrame(u);
+            edit.loadFrame(user);
             edit.setVisible(true);
         }
     }//GEN-LAST:event_jButton1ActionPerformed

@@ -16,6 +16,32 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
+-- Table structure for table `film`
+--
+
+DROP TABLE IF EXISTS `film`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `film` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `runtime` int DEFAULT NULL,
+  `rating` float DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `film`
+--
+
+LOCK TABLES `film` WRITE;
+/*!40000 ALTER TABLE `film` DISABLE KEYS */;
+INSERT INTO `film` VALUES (1,'The Godfather',120,8.9),(2,'The Last Done',116,8),(3,'Mat Biec',135,8);
+/*!40000 ALTER TABLE `film` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `student`
 --
 
@@ -159,4 +185,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-01-07 21:03:40
+-- Dump completed on 2021-01-07 23:04:13
